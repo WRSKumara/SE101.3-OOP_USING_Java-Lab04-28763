@@ -1,0 +1,68 @@
+package com.mycompany.employeeobj1;
+
+
+public class Employeeobj1 
+{
+ 
+    public static void main(String[] args) 
+    {
+       Employee mrbogdan=new Employee();
+       Employee msbird=new Employee();
+       
+       mrbogdan.setempID(12345678);
+       mrbogdan.setempName("Mr.Bogdan");
+       mrbogdan.setempDesignation("Doctor");
+       
+       msbird.setempID(7654321);
+       msbird.setempName("Ms.Bird");
+       msbird.setempDesignation("Teacher");
+       
+        System.out.println("Mr.Bogdan Details:");
+        System.out.println("ID: "+mrbogdan.getempID());
+        System.out.println("Name: "+mrbogdan.getempName());
+        System.out.println("Designation: "+mrbogdan.getempDesignation());
+        
+        System.out.println("Ms.Bird Details");
+        System.out.println("ID: "+msbird.getempID());
+        System.out.println("Name: "+msbird.getempName());
+        System.out.println("Designation: "+msbird.getempDesignation());
+             
+    }
+}
+
+
+
+package com.mycompany.employeeobj1;
+
+
+public class Employee 
+{
+    private int empID;
+    private String empName;
+    private String empDesignation;
+    
+    public void setempID(int empID)
+    {
+        this.empID=empID;
+    }
+    public int getempID()
+    {
+        return empID;
+    }
+    public void setempName(String empName)
+    {
+        this.empName=empName;
+    }
+    public String getempName()
+    {
+        return empName;
+    }
+    public void setempDesignation(String empDesignation)
+    {
+        this.empDesignation=empDesignation; 
+    }
+    public String getempDesignation()
+    {
+        return empDesignation;
+    }
+}
